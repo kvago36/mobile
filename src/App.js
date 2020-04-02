@@ -49,7 +49,7 @@ class App extends Component {
         <div className={styles.mainRow}>
           <aside className={styles.leftColumnOpen}>
             {
-              cameras.map(camera => <CamerasListItem {...camera} />)
+              cameras.map(camera => <CamerasListItem key={camera.id} {...camera} />)
             }
           </aside>
           <div className={styles.grid_wrapper}>

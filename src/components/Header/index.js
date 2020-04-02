@@ -19,9 +19,7 @@ const Header = () => {
                 id={id}
                 key={name}
                 href={name}
-                exact={exact}
                 className={styles.header_nav_a}
-                activeClassName={styles.header_navItem__selected}
               >
                 {title}
               </a>

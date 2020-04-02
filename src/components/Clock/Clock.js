@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import styles from './Clock.module.css';
 
-require('moment/locale/ru');
-
 class Clock extends Component {
   constructor(props) {
     super(props);
