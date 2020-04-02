@@ -1,0 +1,26 @@
+@value --dark-indigo from '../../Styleguide/variablesColors.module.css';
+
+.grid_wrapper {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+  flex: 1;
+  background-color: --dark-indigo;
+}
+
+/* Show video panel on hover */
+.grid_wrapper:hover + div > div:last-child {
+  opacity: 1;
+  visibility: visible;
+}
+
+.camera_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.camera_wrap:hover {
+  border: solid 4px #95b3e5;
+}

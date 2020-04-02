@@ -1,0 +1,143 @@
+@value titleHeader from '../../Styleguide/typography.module.css';
+@value --dark-slate-blue, --dark-blue-grey from '../../Styleguide/variablesColors.module.css';
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav {
+  margin-left: 105px;
+  display: flex;
+}
+
+.header_logo {
+  background-image: url(./InSentryLogo.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 24px;
+  background-size: 93%;
+  width: 143px;
+}
+
+.header_left .header_nav .header_navItem__selected {
+  background-color: --dark-slate-blue;
+}
+
+.header_nav_a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 8px;
+  padding: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all .2s ease;
+
+  composes: titleHeader;
+}
+
+.header_nav_a:hover {
+  background-color: --dark-slate-blue;
+}
+
+.alarms {
+  margin: 0 20px;
+}
+
+.header_event {
+  margin-right: 23px;
+  cursor: pointer;
+}
+
+.header_event_text {
+  margin-left: 7px;
+  display: inline-block;
+  color: #fff;
+  user-select: none;
+  font-size: 18px;
+}
+
+.form_error_svg {
+  display: inline-block;
+}
+
+.form_error_message {
+  color: #fff;
+  display: inline-block;
+  vertical-align: super;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.form_error_close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url(./cross-hover.svg);
+  background-position: center;
+  background-size: contain;
+}
+
+.message {
+  background-color: #b14599;
+  padding: 10px;
+  animation: show .2s linear;
+  text-align: center;
+  box-shadow: none;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon.warning {
+  background-image: url(./icon-warning.svg);
+}
+
+@media (max-width: 950px ) {
+  .header_nav a {
+    font-size: 16px;
+    padding: 7px 10px;
+  }
+
+  .header_nav .link .icon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .header_logo {
+    height: 25px;
+    width: 150px;
+    background-size: 100%;
+  }
+}
+
+.iconUser {
+  background-color: #617ca9;
+  color: --dark-blue-grey;
+  border-radius: 50%;
+  margin: auto 8px 0 10px;
+}

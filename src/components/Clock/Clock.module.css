@@ -1,0 +1,29 @@
+.Clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.ClockTime {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 80px;
+    user-select: none;
+}
+
+.ClockDate {
+    font-size: 12px;
+    color: #8f949c;
+    width: 70px;
+    line-height: 10px;
+}
+
+@media (max-width: 950px ) {
+    .ClockDate,
+    .ClockTime {
+        font-size: 14px;
+        width: 75px;
+    }
+}

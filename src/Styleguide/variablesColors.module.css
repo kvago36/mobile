@@ -1,0 +1,33 @@
+/*MAIN COLORS*/
+@value --dark-indigo: #061024;
+@value --dark-blue-grey: #122244;
+@value --dark-slate-blue: #223366;
+@value --light-navy-blue: #325188;
+@value --denim-blue: #416199;
+@value --faded-blue: #6985b7;
+@value --light-grey-blue: #96b3e3;
+@value --light-periwinkle: #d6dce7;
+@value --white: #ffffff;
+@value --white-blue: #748CBD;
+@value --purple: #DE7DFF;
+@value --transparent: transparent;
+
+/*HALFTONE*/
+@value --dark-indigo-50: rgba(6, 16, 36, 0.5);
+@value --dark-indigo-20: rgba(6, 16, 36, 0.2);
+@value --dark-slate-blue-30: rgba(34, 51, 102, 0.3);
+@value --light-periwinkle-40: rgba(214, 220, 231, 0.4);
+@value --light-periwinkle-70: rgba(214, 220, 231, 0.7);
+@value --white-40: rgba(255, 255, 255, 0.4);
+@value --white-20: rgba(255, 255, 255, 0.2);
+@value --soft-green-40: rgba(104, 191, 119, 0.4);
+@value --light-black: rgba(1, 1, 1, 0.5);
+@value --grey: rgba(1, 1, 1, 0.3);
+@value --light-salmon-40: rgba(255, 125, 125, 0.4);
+
+/*ACCIDENT COLOR*/
+@value --salmon: #ff7d7d;
+@value --soft-green: #68bf77;
+@value --apricot: #fcc66a;
+@value --dark-green: #428f3c;
+@value --light-yellow: #ebebe4;

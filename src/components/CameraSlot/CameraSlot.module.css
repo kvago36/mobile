@@ -1,0 +1,37 @@
+@value --dark-slate-blue from '../../Styleguide/variablesColors.module.css';
+
+.cameraSlot {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+}
+
+.camera_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 21px);
+  border: 2px solid --dark-slate-blue;
+  border-radius: 5px;
+}
+
+.small .empty_camera_header {
+  font-size: 16px;
+}
+
+.normal .empty_camera_header {
+  font-size: 20px;
+}
+
+.empty_camera_header {
+  font-size: 24px;
+  margin-top: 8px;
+  color: #53718c;
+  font-family: FuturaPTBook, sans-serif;
+  font-weight: 500;
+}
+
+.camera_can_drop {
+  background-color: rgba(51, 83, 138, 0.6);
+  border: dashed 3px #95b3e5;
+}

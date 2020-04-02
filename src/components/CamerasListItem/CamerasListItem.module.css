@@ -1,0 +1,157 @@
+@value --dark-indigo, --light-periwinkle-40, --white, --light-black from "../../Styleguide/variablesColors.module.css";
+
+.cameraItem {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+  width: 210px;
+  height: 144px;
+}
+.cameraItem.active {
+  background-color: #d651ba;
+}
+
+.cameraListItem {
+  user-select: none;
+}
+
+.cameraItem.not_allowed {
+  cursor: no-drop;
+}
+
+.cameraItemAlarm {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 0;
+  background-color: #b14599;
+}
+
+.cameraItem:not(first-child) {
+  margin-top: 16px;
+}
+
+.cameraItem_info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.cameraItem_image {
+  margin-right: 10px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: --dark-indigo;
+  border-radius: 5px;
+  background-image: url(../Image/camera-default.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.cameraItem_alarm {
+  margin-right: 3px;
+  display: flex;
+}
+
+.ptz {
+  position: absolute;
+  color: --white;
+  left: 5px;
+  top: 5px;
+  z-index: 1;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 3px;
+  text-align: center;
+  background-color: --light-black;
+}
+
+.archive.cameraItem_image::before {
+  background-color: #b14599;
+  border: solid 1px #ffffff;
+}
+
+.cameraItem_name {
+  font-size: 15px;
+  color: --light-periwinkle-40;
+  width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.icon_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera_icon_empty {
+  width: 26px;
+  height: 30px;
+}
+
+@media (max-width: 780px) {
+  .cameraItem_title,
+  .cameraItem_name {
+    font-size: 14px;
+  }
+}
+
+.errorWatch {
+  width: 100%;
+  height: 100%;
+  background-color: --dark-indigo;
+  border-radius: 5px;
+  background-image: url(../Image/camera-default.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBorder {
+  border-radius: 5px;
+}
+
+.loaderWatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: --dark-indigo;
+  background-image: url(../Image/camera-load.svg);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

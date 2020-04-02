@@ -1,0 +1,222 @@
+@value --dark-indigo, --light-navy-blue, --white from './variablesColors.module.css';
+
+/*connect somewhere file 'fonts/fonts.css'*/
+/*as example*/
+/*import "../Styleguide/fonts/fonts.css";*/
+
+/*COMMON CLASSES*/
+/*FONT-SIZE*/
+.fs10 {
+  font-size: 10px;
+}
+
+.fs11 {
+  font-size: 11px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs13 {
+  font-size: 13px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs15 {
+  font-size: 15px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs17 {
+  font-size: 17px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs19 {
+  font-size: 19px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs21 {
+  font-size: 21px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs32 {
+  font-size: 32px;
+}
+
+/*LINE-HEIGHT*/
+.lh12 {
+  line-height: 12px;
+}
+
+.lh13 {
+  line-height: 13px;
+}
+
+.lh14 {
+  line-height: 14px;
+}
+
+.lh15 {
+  line-height: 15px;
+}
+
+.lh16 {
+  line-height: 16px;
+}
+
+.lh17 {
+  line-height: 17px;
+}
+
+.lh18 {
+  line-height: 18px;
+}
+
+.lh19 {
+  line-height: 19px;
+}
+
+.lh20 {
+  line-height: 20px;
+}
+
+.lh21 {
+  line-height: 21px;
+}
+
+.lh22 {
+  line-height: 22px;
+}
+
+.lh23 {
+  line-height: 23px;
+}
+
+.lh24 {
+  line-height: 24px;
+}
+
+.lh25 {
+  line-height: 25px;
+}
+
+.lh30 {
+  line-height: 30px;
+}
+
+.lh32 {
+  line-height: 32px;
+}
+
+.lhNormal {
+  line-height: normal;
+}
+
+/*FONT-WEIGHT*/
+.fw400 {
+  font-weight: normal;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+/*FONT-FAMILY*/
+.futuraPTBook {
+  font-family: FuturaPTBookMain, sans-serif;
+}
+
+.PTSans {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*COMMON*/
+.commonText {
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+/* --Title-Style */
+.titleHeader {
+  composes: fs18 lh20 fw500 commonText futuraPTBook;
+  color: --white;
+}
+
+.titleBig {
+  composes: fs24 lh30 fw600 commonText futuraPTBook;
+  color: --dark-indigo;
+}
+
+.titleModal {
+  composes: fs32 lh32 fw500 commonText futuraPTBook;
+  color: --dark-indigo;
+}
+
+.titleColumn {
+  composes: fs16 lh20 fw600 commonText futuraPTBook;
+  color: --dark-indigo;
+}
+
+/* Text-Style */
+.textSmall {
+  composes: fs12 lh16 fw400 commonText PTSans;
+  color: --dark-indigo;
+}
+
+.textTiny {
+  composes: fs13 lh16 fw500 commonText futuraPTBook;
+  color: --white;
+}
+
+.text {
+  composes: fs15 lh20 fw400 commonText PTSans;
+  color: --dark-indigo;
+}
+
+.textBig {
+  composes: fs18 lh20 fw500 commonText futuraPTBook;
+  color: --light-navy-blue;
+}
+
+/* Control style */
+.textLabel {
+  composes: fs16 lh22 fw500 commonText futuraPTBook;
+}
+
+.textNote {
+  composes: fs13 lh22 fw600 commonText PTSans;
+}
+
+.textDescription {
+  composes: fs11 lh13 fw600 commonText PTSans;
+}
+
+/* Timeline labels */
+.textSmallBold {
+  composes: fs12 lh16 fw600 commonText PTSans;
+  color: --dark-indigo;
+}

@@ -1,0 +1,134 @@
+@value --dark-blue-grey, --dark-indigo, --white, --denim-blue from './Styleguide/variablesColors.module.css';
+@value gTransitionDuration, gTransitionTimingFunction from "./Styleguide/variablesCommon.module.css";
+@value text from "./Styleguide/typography.module.css";
+
+/* HELPERS */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.grid_wrapper {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+  margin-left: 16px;
+  flex: 1;
+  background-color: --dark-indigo;
+}
+
+/* Show video panel on hover */
+.grid_wrapper:hover + div > div:last-child {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* LAYOUT COMMON */
+.container {
+  composes: vertical;
+
+  display: flex;
+  height: 100%;
+
+  /* For cases like zooming to 500% */
+  min-height: 660px;
+
+  background-color: --dark-indigo;
+}
+
+.topRow {
+  composes: horizontal;
+  flex-shrink: 0;
+  margin: 16px;
+  align-items: center;
+  height: 24px;
+}
+
+.bottomRow {
+  flex-grow: 1;
+  flex-shrink: 1;
+  /*height: 100%;*/
+  min-height: 0;
+  margin: 0 16px;
+}
+
+
+/* HELPERS */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+/* LAYOUT COMMON */
+.mainRow {
+  composes: horizontal;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.leftColumn {
+  /* Left column are fixed-width */
+  flex-shrink: 0;
+  border-radius: 5px 0 0 0;
+  background-color: --dark-blue-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 0;
+  transition: all gTransitionDuration gTransitionTimingFunction;
+}
+
+.leftColumnOpen {
+  composes: leftColumn;
+  width: 248px;
+}
+
+.leftColumnClose {
+  composes: leftColumn;
+  width: 0;
+}
+
+.doubleButton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 16px;
+  color: white;
+  border-radius: 5px;
+  background: --dark-indigo;
+  overflow: hidden;
+  max-width: 210px;
+  height: 40px;
+}
+
+.singleButton {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.count {
+  composes: text;
+  color: --white;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.iconFilm {
+  margin-bottom: 2px;
+}
+
+.active {
+  background-color: --denim-blue;
+}

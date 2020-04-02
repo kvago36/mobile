@@ -1,0 +1,12 @@
+.imgError {
+	display: none;
+}
+  
+.loading {
+	visibility: hidden;
+}
+
+.wrapperDefault {
+	pointer-events: none;
+	width: 100%;
+}

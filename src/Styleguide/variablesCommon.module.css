@@ -1,0 +1,7 @@
+@value --dark-indigo-50 from './variablesColors.module.css';
+
+@value gTransitionDuration: 300ms;
+@value gTransitionTimingFunction: ease-in-out;
+
+@value --box-shadow: 0px 1px 4px --dark-indigo-50;
+@value --box-shadow-alt: 0px 3px 5px --dark-indigo-50;
